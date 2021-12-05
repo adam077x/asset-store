@@ -1,0 +1,35 @@
+.asset {
+    background: lightblue;
+    width: 15rem;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 0.5rem;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.asset:hover {
+    color: rgb(95, 95, 95);
+}
+
+.assets {
+    display: inline-flex;
+    margin: 0.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.create-asset-input {
+    width: 90%;
+    margin: 1rem;
+    display: block;
+}
+
+.asset-content {
+    margin: 0rem 1rem;
+}

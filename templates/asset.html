@@ -1,0 +1,10 @@
+{% macro create_asset(id, title, description) %}
+<a href="asset/{{id}}" class="asset">
+    <h4>{{title}}</h4>
+
+    <img src="https://picsum.photos/200/150">
+    <p>
+        {{description}}
+    </p>
+</a>
+{% endmacro %}

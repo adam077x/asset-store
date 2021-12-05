@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<form class="create-asset" action="/create_asset" method="post">
+    <input class="create-asset-input" type="text" name="title">
+    <textarea class="create-asset-input" name="description"></textarea>
+    <input class="create-asset-input" type="submit" value="Create Asset" name="create_asset">
+</form>
+
+{% endblock %}

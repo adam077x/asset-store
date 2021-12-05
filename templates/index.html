@@ -1,0 +1,12 @@
+{% from "asset.html" import create_asset %}
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="assets">
+{% for asset in assets %}
+{{ create_asset(asset.id, asset.title, asset.description) }}
+{% endfor %}
+</div>
+
+{% endblock %}
