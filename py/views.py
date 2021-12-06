@@ -12,7 +12,7 @@ def index():
 def create_asset():
     if request.method == 'POST':
         if "create_asset" in request.form:
-            asset = Asset(request.form["title"], request.form["description"])
+            asset = Asset(request.form["title"], request.form["description"], request.form["full_description"])
             db.session.add(asset)
             db.session.commit()
 

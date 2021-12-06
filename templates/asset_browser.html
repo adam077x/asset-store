@@ -4,7 +4,13 @@
 
 <div class="asset-content">
     <h1>{{asset.title}}</h1>
-    <p>{{asset.description}}</p>
+    <p class="summary-desc">{{asset.description}}</p>
+    <img src="https://picsum.photos/480/320">
+    <br>
+    <br>
+    <h4 class="full-desc">Full description:</h4>
+    <p>{{asset.full_description}}</p>
+    <button type="button" class="btn btn-outline-warning">Download</button>
 </div>
 
 {% endblock %}

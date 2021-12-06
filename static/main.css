@@ -14,9 +14,16 @@
     color: rgb(95, 95, 95);
 }
 
+.summary-desc {
+    color: grey;
+}
+
 .assets {
     display: inline-flex;
+    flex-wrap: wrap;
     margin: 0.5rem;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -31,5 +38,13 @@ body {
 }
 
 .asset-content {
-    margin: 0rem 1rem;
+    margin: 0% 20%;
+}
+
+.left-container {
+    text-align: left;
+}
+
+.asset-content img {
+    max-width: 100%;
 }

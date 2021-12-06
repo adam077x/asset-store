@@ -3,9 +3,16 @@
 {% block body %}
 
 <form class="create-asset" action="/create_asset" method="post">
-    <input class="create-asset-input" type="text" name="title">
-    <textarea class="create-asset-input" name="description"></textarea>
-    <input class="create-asset-input" type="submit" value="Create Asset" name="create_asset">
+    <input type="text" class="form-control create-asset-input" name="title" placeholder="Title" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    <div class="form-floating create-asset-input">
+        <textarea name="description" class="form-control" placeholder="Leave a short description here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Short Description</label>
+    </div>
+    <div class="form-floating create-asset-input">
+        <textarea name="full_description" class="form-control" placeholder="Leave a long description here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Long Description</label>
+    </div>
+    <input class="create-asset-input btn btn-primary" type="submit" value="Create Asset" name="create_asset">
 </form>
 
 {% endblock %}
